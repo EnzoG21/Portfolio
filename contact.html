@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+<header>
+    <h1 id="typer" alt="Enzo Garny"></h1>
+
+    <script>
+        var i = 0;
+        var txt = 'Enzo Garny ';
+        var speed = 200;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typer").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        window.onload = function () {
+            typeWriter();
+        };
+    </script>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/aboutme.html">About</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="contact_section">
+        <div class="information">
+            <h2>Contact Information</h2>
+            <p>We have a wide variety of daycare facilities. Listed below is all our locations and their addresses. Feel
+                free to pop
+                in or fill out the form on the right.</p>
+            <p>Contact Details:<br>Phone: 01695 883 112<br>Email: info@doggiewalks.co.uk</p>
+            <img src="#" alt="">
+    
+        </div>
+        <aside class="contact_form">
+            <h2>Contact Form</h2>
+    
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </aside>
+    
+    
+    </section>
+</body>
+
+</html>

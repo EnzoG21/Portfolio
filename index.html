@@ -11,7 +11,24 @@
 <body>
 
     <header>
-        <h1>Enzo Garny</h1>
+        <h1 id="typer" alt="Enzo Garny"></h1>
+        
+        <script>
+            var i = 0;
+            var txt = 'Enzo Garny ';
+            var speed = 200;
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("typer").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            window.onload = function () {
+                typeWriter();
+            };
+        </script>
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -23,18 +40,7 @@
     </header>
 
     <main>
-        <article>
-            <h2>Thing 1</h2>
-            <p>Stuff</p>
-        </article>
-        <article>
-            <h2>Thing 2</h2>
-            <p>Stuff</p>
-        </article>
-        <article>
-            <h2>Thing 3</h2>
-            <p>Stuff</p>
-        </article>
+        
     </main>
 
     <footer>

@@ -35,13 +35,73 @@ main {
     padding: 20px;
 }
 
-article {
-    background-color: #111;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 footer {
     text-align: center;
     padding: 20px;
+}
+
+
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+.contact_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.contact_form {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.information {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.information img {
+    width: 100%;
+    height: auto;
 }
