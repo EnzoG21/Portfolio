@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="typer" alt="Enzo Garny"></h1>
+
+        <script>
+            var i = 0;
+            var txt = 'Enzo Garny ';
+            var speed = 200;
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("typer").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            window.onload = function () {
+                typeWriter();
+            };
+        </script>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutme.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+
+</html>
