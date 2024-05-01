@@ -99,9 +99,47 @@ input[type="submit"]:hover {
 .information {
     flex: 1;
     margin-right: 20px;
+    font-size: 20px;
 }
 
 .information img {
     width: 100%;
     height: auto;
+}
+
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/enzo.JPG');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+.banner p{
+    position: absolute;
+        margin-top:140px;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        background-color: black;
+        padding: 10px 20px;
+        border-radius: 10px;
 }
