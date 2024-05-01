@@ -20,7 +20,7 @@ This repository contains the code for my portfolio website. It serves as a showc
 
 ## How to Use
 
-1. Clone this repository to your local machine using `git clone https://github.com/your-username/repository-name.git`
+1. Clone this repository to your local machine using `git clone https://github.com/your-username/Portfolio.git`
 2. Open the `index.html` file in your preferred web browser to view the website locally.
 3. Explore the different sections of the website to learn more about Enzo Garny's work and skills.
 
