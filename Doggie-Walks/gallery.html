@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Doggie Walks!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Doggie-Walks/styles.css">
 </head>
 
 <body>
     <section>
         <div class="top_banner">
-            <img src="/images/logo.svg" alt="Logo">
+            <img src="/Doggie-Walks/images/logo.svg" alt="Logo">
             <strong>Ormskirk</strong>
             Doggie Walks<br>
             3-5 St Helens Road,<br>
@@ -27,7 +27,7 @@
             47 Old Liverpool Road,<br>
             Warrington,<br>
             WA5 1AF
-            <img src="/images/dog-animal-pet-german-longhaired-pointer.jpg" alt="Banner Image">
+            <img src="/Doggie-Walks/images/dog-animal-pet-german-longhaired-pointer.jpg" alt="Banner Image">
         </div>
     </section>
     <header>
@@ -37,16 +37,16 @@
     </header>
     <nav>
         <ul>
-            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Doggie-Walks/Home.html">Home</a></li>
             <li>
-                <a href="/AboutUs.html">About Us</a>
+                <a href="/Doggie-Walks/AboutUs.html">About Us</a>
                 <ul>
-                    <li><a href="/Meet.html">Meet the Team</a></li>
+                    <li><a href="/Doggie-Walks/Meet.html">Meet the Team</a></li>
                 </ul>
             </li>
-            <li><a href="/services.html">Services and Costs</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/Doggie-Walks/services.html">Services and Costs</a></li>
+            <li><a href="/Doggie-Walks/gallery.html">Gallery</a></li>
+            <li><a href="/Doggie-Walks/contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -83,7 +83,7 @@
            
             imageFilenames.forEach(filename => {
                 const img = document.createElement("img");
-                img.src = "images/" + filename;
+                img.src = "/Doggie-Walks/images/" + filename;
                 gallery.appendChild(img);
             });
         });
