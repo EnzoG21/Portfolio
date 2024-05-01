@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coach Profile</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/ehuvik.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        .container5 {
+            max-width: 800px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .dropdown-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .player-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-color: white;
+        }
+
+        .player-image {
+            width: 250px;
+            height: 250px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .player-details {
+            flex: 1;
+        }
+
+        .player-details h2 {
+            margin-top: 0;
+            background-color: transparent;
+            color: white;
+        }
+
+        .player-details p {
+            margin: 5px 0;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        select, input[type="submit"] {
+            color: white;
+            background-color: #333;
+            border: none;
+            padding: 10px 20px;
+            margin:10px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        select {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            font-weight: bold;
+        }
+
+.coaches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.coach {
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    color: white;
+}
+.coach p{
+  color: white;
+  display: block;
+}
+
+.coach img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .coach {
+        width: 80%;
+    }
+}
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="image/ehuvik.png" alt="Logo of EHU Vikings">
+            </div>
+        
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+        
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+        
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Coaches</a></li>
+        
+                    <li class="services">
+                        <a href="#">Seasons</a>
+        
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="2324seas.html">2023-2024</a></li>
+                            <li><a href="2223seas.html">2022-2023</a></li>
+                        </ul>
+        
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Join the Family</a></li>
+        
+
+                    <li class="services">
+                        <a href="#">Gallery</a>
+                    
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="2324photos.php">2023-2024</a></li>
+                            <li><a href="2223photos.php">2022-2023</a></li>
+                    
+                        </ul>
+                    
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="https://www.facebook.com/EHUVikings/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehuvikings/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+
+<section class="coaches">
+        <div class="coach">
+            <img src="/image/hus.JPG" alt="Head Coach">
+            <h2>Head Coach</h2>
+            <p>Name: Husam Farraj</p>
+            <p>Experience as coach: 4 Years</p>
+            <p>Experience as player: 9 Years</p>
+            <p>Previous Teams: Halton Spartans</p>
+            <p>Goal: To aid these young men and women in unlocking their potential as they strive for excellence, both academically and on the field. 
+            As a team, our goals are never changing - we will always hold ourselves to the highest standard and compete for the highest accolades on offer.</p>
+        </div>
+        <div class="coach">
+            <img src="/image/chrism.JPG" alt="Defensive Coordinator">
+            <h2>Assistant Head Coach / Defensive Coordinator</h2>
+            <p>Name: Chris Merrill</p>
+            <p>Experience as coach: 8 Years</p>
+            <p>Experience as player: 3 Years</p>
+            <p>Previous Teams: EHU Vikings & Chester Roman</p>
+            <p>Goal: My goals for the upcoming season is to bring back Playoff football to Edge Hill and to push for promotion into Division
+            1 </p>
+        </div>
+        <div class="coach">
+            <img src="/image/yotam.JPG" alt="Offensive Coordinator">
+            <h2>Offensive Coordinator / Wide Receiver Coach</h2>
+            <p>Name: Yotam Berant</p>
+            <p>Experience as coach: 5 years</p>
+            <p>Experience as player: 9 Years</p>
+            <p>Previous Teams: Vikings, Lancashire Wolverines & Chester Romans</p>
+            <p>Goal: Goal is to be competitive in every aspect of the offence, winning in everything we do </p>
+        </div>
+        <div class="coach">
+            <img src="/image/mattg.png" alt="Defensive Backs Coach">
+            <h2>Special Teams Coordinator / Defensive Backs Coach</h2>
+            <p>Name: Matt Gannon</p>
+            <p>Experience as coach: 1 Year</p>
+            <p>Experience as player: 4 Years</p>
+            <p>Previous Teams: Birmingham Lions</p>
+            <p>Goal: A deep playoff run aswell as coming up against good opposition to test ourselves to the best. Furthermore to ensure that the
+                DB's are the strongest unit in the team for the second year straight.
+            </p>
+        </div>
+        <div class="coach">
+            <img src="/image/ben m.JPG" alt="Quarterbacks Coach">
+            <h2>Quarterbacks Coach</h2>
+            <p>Name: Ben Martin</p>
+            <p>Experience as coach: 1 Year</p>
+            <p>Experience as player: 6 Years</p>
+            <p>Previous Teams: Shropshire Revolution & Manchester Titans</p>
+            <p>Goal: To help facilitate the growth of these young players on and off
+            the field which should help us to become a playoff contender once again</p>
+        </div>
+        <div class="coach">
+            <img src="/image/stephen1.JPG" alt="Running Backs Coach">
+            <h2>Running Backs Coach</h2>
+            <p>Name: Stephen Holden</p>
+            <p>Experience as coach: 1 years</p>
+            <p>Experience as player: 1 years</p>
+            <p>Previous Team: Halton Spartans</p>
+            <p>Goal: For all players to enjoy playing football, know there assignments, be dedicated to the team and team culture and most
+            importantly have fun while doing it</p>
+        </div>
+        <div class="coach">
+            <img src="/image/garry.JPG" alt="Running Backs Coach">
+            <h2>Running Backs Coach</h2>
+            <p>Name: Garry Plunkett</p>
+            <p>Experience as coach: 2 years</p>
+            <p>Experience as player: 6 years</p>
+            <p>Previous Team: LJMU Fury, EHU Vikings & Merseyside Nighthawks</p>
+            <p>Goal:Promotion and a ring. Aiming for anything below the maximum attainable isn’t setting your sights high enough. </p>
+        </div>
+        <div class="coach">
+            <img src="/image/chrisw.JPG" alt="Defensive Line Coach">
+            <h2>Defensive Line Coach</h2>
+            <p>Name: Chris Wright</p>
+            <p>Experience as coach: Rookie </p>
+            <p>Experience as player: 3 Years</p>
+            <p>Previous Teams: Halton Spartans & Chester Romans</p>
+            <p>Goal: Expectations for this year is to create a D line that will set the tone for the whole of the defence and lead from the
+            front, but I also want to make sure that every single person that turns up for the vikings most of all has fun.</p>
+        </div>
+        <div class="coach">
+            <img src="/image/craig1.JPG" alt="Defensive Line Coach">
+            <h2>Defensive Line Coach</h2>
+            <p>Name: Craig Roberts</p>
+            <p>Experience as coach: 4 Years</p>
+            <p>Experience as player: 5 Years</p>
+            <p>Previous Teams: LJMU Fury, Halton Spartans & Chester Romans</p>
+            <p>Goal: Goal for the season - Secure Promotion to div 1 and a Div 2 championship.</p>
+        </div>
+        <div class="coach">
+            <img src="/image/enzo.JPG" alt="Offensive Line Coach">
+            <h2>Assistant Offensive Line Coach</h2>
+            <p>Name: Enzo Garny</p>
+            <p>Experience as coach: Rookie</p>
+            <p>Experience as player: 9 Years</p>
+            <p>Previous Teams: Deamons Cernusco, Lions Bergamo, Seamen Milano, Vikings</p>
+            <p>Goal: The goal for this year is to absolutely dominate the field with an oline that suffers no 
+                sacks and helps drive the field with the rest of the offence.
+            </p>
+        </div>
+        <div class="coach">
+            <img src="/image/kevin.JPG" alt="Defensive Line Coach">
+            <h2>Assistant DB Coach</h2>
+            <p>Name: Kevin Platt</p>
+            <p>Experience as coach: Rookie</p>
+            <p>Experience as player: 4 Years</p>
+            <p>Previous Teams: Halton Spartans & Staffordshire Surge</p>
+            <p>Goal: Goals for the season - I want the DB unit to be ball hawks and get as many picks as possible with pick 6s as the main
+            goal</p>
+        </div>
+        
+        
+       
+    </section>
+
+<footer>
+	<p>&copy; 2023 Edge Hill Vikings. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

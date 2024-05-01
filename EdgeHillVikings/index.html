@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EHU Vikings</title>
+  <link rel="icon" href="/image/ehuvik.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<style>
+  /*Welcome Section*/
+  .welcome-section {
+    background-color: transparent;
+    padding: 50px;
+    
+  }
+
+  .welcome-content {
+    text-align: center;
+
+  }
+
+  .welcome-content h1 {
+    font-size: 48px;
+    color: white;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .welcome-section {
+      padding: 30px;
+      /* Example smaller padding for phones */
+    }
+
+    .welcome-content h1 {
+      font-size: 28px;
+      /* Example smaller font size for phones */
+    }
+  }
+
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adjust the height as needed */
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  /* The carousel itself */
+  .carousel {
+    overflow: hidden;
+    /* Adjust the width to fit the carousel items properly */
+    width: 100%;
+    /* Adjust the height as needed */
+    height: 500px;
+    position: relative;
+  }
+
+  /* Individual carousel items */
+  .carousel img {
+    width: 100%;
+    height: auto;
+    /* Change to 'auto' to maintain aspect ratio */
+    display: none;
+    position: absolute;
+  }
+
+  /* Arrows for navigation */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    /* Arrow color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Background color for better visibility */
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .left {
+    left: 10px;
+  }
+
+  .right {
+    right: 10px;
+  }
+
+  /* Hide the carousel on mobile devices */
+ @media (max-width: 768px) {
+    .carousel-container {
+        display: block; /* Change display to block for stacking elements */
+    }
+
+    .carousel {
+        height: auto; /* Let the content dictate the height */
+    }
+
+    .carousel img {
+        display: block; /* Show the images */
+        position: static; /* Remove absolute positioning */
+    }
+
+    .arrow {
+       
+        
+        font-size: 20px; /* Adjust arrow size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+  .countdown {
+    font-size: 36px;
+    /* Default font size for the countdown */
+  }
+
+  #countdown {
+    text-align: center;
+    font-size: 36px;
+    /* Default font size for the countdown */
+  }
+
+  /* Media Query for phones */
+  @media only screen and (max-width: 767px) {
+    .countdown {
+      font-size: 20px;
+      /* Smaller font size for phones */
+    }
+  }
+
+  /* Media Query for tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .countdown {
+      font-size: 25px;
+      /* Adjust font size for tablets */
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    #countdown {
+      font-size: 20px;
+      padding-left: 5%;
+      padding-right: 5%;
+      /* Smaller font size for phones */
+    }
+  }
+
+  /* Media Query for tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #countdown {
+      font-size: 25px;
+      /* Adjust font size for tablets */
+    }
+  }
+</style>
+
+<body>
+
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="image/ehuvik.png" alt="Logo of EHU Vikings">
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Coaches</a></li>
+
+        <li class="services">
+          <a href="#">Seasons</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="2324seas.html">2023-2024</a></li>
+            <li><a href="2223seas.html">2022-2023</a></li>
+          </ul>
+
+        </li>
+        <li><a href="events.html">Events</a></li>
+        <li><a
+            href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Join the Family</a>
+        </li>
+
+        <li class="services">
+          <a href="#">Gallery</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="2324photos.php">2023-2024</a></li>
+            <li><a href="2223photos.php">2022-2023</a></li>
+            
+          </ul>
+
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="https://www.facebook.com/EHUVikings/"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/ehuvikings/?hl=en"><i class="fab fa-instagram"></i></a></li>
+      </div>
+    </ul>
+  </nav>
+
+
+  
+
+  <section class="welcome-section">
+    <div class="welcome-content">
+      <h1>Welcome to the Edge Hill Vikings Website</h1>
+    </div>
+  </section>
+
+<section>
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="/image/recrut.jpg" alt="Image 1">
+        <img src="/image/Your paragraph text.png" alt="Image 2">
+      </div>
+      <div class="arrow left">&larr;</div>
+      <div class="arrow right">&rarr;</div>
+    </div>
+    <script src="carousel.js"></script>
+  </section>
+
+  <section class="countdown">
+    <h1>Next Game Event:</h1>
+    <div id="countdown"></div>
+
+    <script>
+      // Define the game events
+      const gameEvents = [{
+        name: "Bombers VS Vikings",
+        date: new Date("2023-11-05T18:00:00"),
+      },
+      {
+        name: "Vikings VS Stallions",
+        date: new Date("2023-12-03T15:30:00"),
+      },
+      {
+        name: "Rams VS Vikings",
+        date: new Date("2023-12-10T20:15:00"),
+      },
+      {
+        name: "Vikings VS Crusaders",
+        date: new Date("2024-02-04T12:45:00"),
+      },
+      {
+        name: "Vikings VS Muddogs",
+        date: new Date("2024-02-11T19:00:00"),
+      },
+      ];
+
+      // Get the countdown element
+      const countdownElement = document.getElementById("countdown");
+
+      // Function to update the countdown
+      function updateCountdown() {
+        const now = new Date().getTime();
+
+        // Find the next game event
+        let nextEvent;
+        for (let i = 0; i < gameEvents.length; i++) {
+          if (gameEvents[i].date.getTime() > now) {
+            nextEvent = gameEvents[i];
+            break;
+          }
+        }
+
+        if (nextEvent) {
+          // Calculate the time remaining
+          const distance = nextEvent.date.getTime() - now;
+
+          // Calculate days, hours, minutes, and seconds
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the countdown
+          countdownElement.innerHTML = `${nextEvent.name} starts in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        } else {
+          // No upcoming events
+          countdownElement.innerHTML = "No upcoming events";
+        }
+      }
+
+      // Update the countdown immediately
+      updateCountdown();
+
+      // Update the countdown every second
+      setInterval(updateCountdown, 1000);
+    </script>
+  </section>
+
+  <main id="container">
+    <div class="card">
+      <img src="/image/hus.JPG" alt="Photo of Head Coach and players">
+
+      <!-- A div with card__details class to hold the details in the card  -->
+      <div class="card__details">
+
+        <!-- Span with tag class for the tag -->
+        <span class="tag">Games</span>
+
+        <span class="tag">Results</span>
+
+        <!-- A div with name class for the name of the card -->
+        <div class="name">Season</div>
+
+        <p>This section is about our current season matches as well as our results. Each game outcome is displayed
+          and our Head Coach gives us a recap of what happened
+        </p>
+
+        <button onclick="redirectToPage('2324seas.html')">Read more</button>
+      </div>
+
+
+    </div>
+
+    <div class="card">
+      <img src="/image/cheer.JPG" alt="Photo with EHU Cheerleading">
+
+      <!-- A div with card__details class to hold the details in the card  -->
+      <div class="card__details">
+
+        <!-- Span with tag class for the tag -->
+        <span class="tag">Charity</span>
+
+        <span class="tag">Events</span>
+
+        <span class="tag">Community</span>
+
+        <!-- A div with name class for the name of the card -->
+        <div class="name">Events</div>
+
+        <p>This section is about the events the EHU Vikings are about to have including socials, charity and other
+          events such as with Sideline Cheerleading who cheer our games
+        </p>
+
+        <button onclick="redirectToPage('events.html')">Read more</button>
+      </div>
+
+
+    </div>
+    <div class="card">
+      <img src="/image/photo.JPG" alt="Photo from EHU Vikings Gameday">
+
+      <!-- A div with card__details class to hold the details in the card  -->
+      <div class="card__details">
+
+        <!-- Span with tag class for the tag -->
+        <span class="tag">Gameday</span>
+
+        <span class="tag">Team</span>
+
+        <span class="tag">Events</span>
+
+        <!-- A div with name class for the name of the card -->
+        <div class="name">Photos</div>
+
+        <p>This section contains some team photos during the season of our players taken by our photosgrapher
+          while in action going against the
+          teams in our division
+        </p>
+
+        <button onclick="redirectToPage('undercons.html')">Read more</button>
+      </div>
+
+
+    </div>
+    <div class="card">
+      <img src="/image/ehuvik.png" alt="EHU Vikings Logo">
+
+      <!-- A div with card__details class to hold the details in the card  -->
+      <div class="card__details">
+
+        <!-- Span with tag class for the tag -->
+        <span class="tag">Info</span>
+
+        <span class="tag">Members</span>
+
+        <!-- A div with name class for the name of the card -->
+        <div class="name">About Us</div>
+
+        <p>This section is all about Us, the EHU Vikings with our Mission, History as well as our current Committee
+          members and the position on the team. Please look at this section for any info
+        </p>
+
+        <button onclick="redirectToPage('about.html')">Read more</button>
+      </div>
+
+
+    </div>
+    <div class="card">
+      <img src="/image/team.JPG" alt="Team Photo of EHU Vikings">
+
+      <!-- A div with card__details class to hold the details in the card  -->
+      <div class="card__details">
+
+        <!-- Span with tag class for the tag -->
+        <span class="tag">Recruitment</span>
+
+        <span class="tag">New Team</span>
+
+        <!-- A div with name class for the name of the card -->
+        <div class="name">Contact Us</div>
+
+        <p>This section is here to make it simple for you to contact us about any query you might have. Fill in the form
+          and we will get an email to which we can reply back to you.
+        </p>
+
+        <button onclick="redirectToPage('contact.php')">Read more</button>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <script>
+    function redirectToPage(url) {
+      window.location.href = url;
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2023 Edge Hill Vikings. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>

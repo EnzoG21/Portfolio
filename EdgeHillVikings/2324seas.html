@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHU Vikings</title>
+    <link rel="icon" href="/image/ehuvik.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<style>
+    .scoreboard {
+        margin: 20px auto;
+        width: 90%;
+        /* Adjusted width to fit mobile screens */
+        max-width: 500px;
+        /* Added max-width for larger screens */
+        background-color: #fff;
+        border: 5px solid green;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        color: black;
+    }
+
+    .scoreboard h2 {
+        text-align: center;
+        margin-top: 0;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 24px;
+        background-color: #fff;
+    }
+
+    .scoreboard h4 {
+        text-align: center;
+        margin-top: 0;
+        color: black;
+        background-color: #fff;
+    }
+
+    .team {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        background-color: #fff;
+        color: black;
+    }
+
+    .team .team-name {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        color: black;
+    }
+
+    .team .team-name img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        background-color: #fff;
+        color: black;
+    }
+
+    .team .team-name span {
+        font-weight: bold;
+        color: black;
+        background-color: #fff;
+    }
+
+    .team .team-score {
+        font-size: 24px;
+        color: black;
+        background-color: #fff;
+    }
+
+    /* Media Query for Mobile Screens */
+    @media only screen and (max-width: 480px) {
+        .scoreboard {
+            width: 90%;
+            max-width: none;
+        }
+
+        .scoreboard h2 {
+            font-size: 20px;
+        }
+
+        .team .team-name img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .team .team-name span {
+            font-size: 14px;
+        }
+
+        .team .team-score {
+            font-size: 20px;
+        }
+    }
+
+    table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #000;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+</style>
+
+<body>
+
+    
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="image/ehuvik.png" alt="Logo of EHU Vikings">
+            </div>
+        
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+        
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+        
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Coaches</a></li>
+        
+                    <li class="services">
+                        <a href="#">Seasons</a>
+        
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="2223seas.html">2022-2023</a></li>
+                            <li><a href="2324seas.html">2023-2024</a></li>
+                        </ul>
+        
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Join the Family</a></li>
+        
+                    <li class="services">
+                        <a href="#">Gallery</a>
+                    
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="2324photos.php">2023-2024</a></li>
+                            <li><a href="2223photos.php">2022-2023</a></li>
+                    
+                        </ul>
+                    
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="https://www.facebook.com/EHUVikings/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehuvikings/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+
+    <main id="container2">
+        <article>
+            <h1>EHU Vikings 2023 Upcoming Season</h1>
+            <h2>Team Record: 0 Win /0 Loss /0 Draw</h2>
+        </article>
+<article>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Team</th>
+                <th>H / A</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>05/11/23</td>
+                <td>Lancaster Bombers</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>03/12/23</td>
+                <td>Stafforshire Stallions</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>10/12/23</td>
+                <td>UCLAN Rams</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>04/02/24</td>
+                <td>Keele Crusaders</td>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>11/02/24</td>
+                <td>Bangor Muddogs</td>
+                <td>H</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</article>
+<!--
+        <article>
+            <div class="scoreboard">
+                <h2>EHU Vikings VS Bangor Muddogs</h2>
+                <h4>Date: 11/02/24</h4>
+                <h4>Time: Unknown</h4>
+                <h4>Results</h4>
+
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team A Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/Muddogs.jpg" alt="Team B Logo">
+                        Bangor Muddogs
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+
+
+            </div>
+            <h2>Title</h2>
+            <h5>Author: Unknown</h5>
+            <h5>Date: Unknown</h5>
+            <p>Unknown</p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>EHU Vikings VS Keele Crusaders</h2>
+                <h4>Date: 04/02/24</h4>
+                <h4>Time: Unknown</h4>
+                <h4>Results</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team A Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/keele.jpg" alt="Team B Logo">
+                        Keele Crusaders
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+        
+            </div>
+            <h2>Title</h2>
+            <h5>Author: Unknown</h5>
+            <h5>Date: Unknown</h5>
+            <p>Unknown</p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>UCLAN Rams VS EHU Vikings</h2>
+                <h4>Date: Unknown</h4>
+                <h4>Time: Unknown</h4>
+                <h4>Results</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/rams.jpg" alt="Team A Logo">
+                        UCLAN Rams
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team B Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+        
+            </div>
+            <h2>Title</h2>
+            <h5>Author: Unknown</h5>
+            <h5>Date: Unknown</h5>
+            <p>Unknown</p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>EHU Vikings VS Stafforshire Stallions</h2>
+                <h4>Date: 03/12/23</h4>
+                <h4>Time: Unknown</h4>
+                <h4>Results</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team A Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/staff.jpg" alt="Team B Logo">
+                        Staffordshire Stalions
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+        
+            </div>
+            <h2>Title</h2>
+            <h5>Author: Unknown</h5>
+            <h5>Date: Unknown</h5>
+            <p>Unknown</p>
+        </article>
+        -->
+        <article>
+            <div class="scoreboard">
+                <h2>Lancaster Bombers VS EHU Vikings</h2>
+                <h4>Date: 05/11/23</h4>
+                <h4>Time: Unknown</h4>
+                <h4>Results</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/bombers.png" alt="Team A Logo">
+                        Lancaster Bombers
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team B Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+        
+            </div>
+            <h2>Title</h2>
+            <h5>Author: Unknown</h5>
+            <h5>Date: Unknown</h5>
+            <p>Unknown</p>
+        </article>
+        
+        
+    </main>
+<footer>
+    <p>&copy; 2023 Edge Hill Vikings. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+</body>
+
+</html>

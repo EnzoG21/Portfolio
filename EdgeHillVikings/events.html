@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHU Vikings</title>
+    <link rel="icon" href="/image/ehuvik.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<style>
+
+
+    .container3 {
+        width: 100%;
+        min-height: 100vh;
+        
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Styling the left floating section */
+    section .leftBox {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    /* Styling the background of left floating section */
+    section .leftBox .content {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        transition: .5s;
+    }
+
+    /* Styling the header of left floating section */
+    section .leftBox .content h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    /* Styling the paragraph of left floating section */
+    section .leftBox .content p {
+        margin: 10px 0 0;
+        padding: 0;
+        color: white;
+    }
+
+    /* Styling the three events section */
+    section .events {
+        width: 100%;
+        height: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* Styling the links of the events section */
+    section .events ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Styling the lists of the event section */
+    section .events ul li {
+        list-style: none;
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /* Styling the time class of events section */
+    section .events ul li .time {
+        padding: 20px;
+        width: 30%;
+        text-align: center;
+        transition: .5s;
+        color: white;
+        border: 1px solid white;
+    }
+
+    /* Styling the header of time class of events section */
+    section .events ul li .time h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 60px;
+        line-height: 30px;
+    }
+
+    /* Styling the texts of time class of events section */
+    section .events ul li .time h2 span {
+        font-size: 30px;
+    }
+
+    /* Styling the details class of events section */
+    section .events ul li .details {
+        padding: 20px;
+        background: transparent;
+        width: 70%;
+        color: white;
+    }
+
+    /* Styling the header of the details class of events section */
+    section .events ul li .details h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+    }
+
+    /* Styling the lists of details class of events section */
+    section .events ul li .details p {
+        margin: 10px 0 0;
+        padding: 0;
+        font-size: 16px;
+    }
+    .footer{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    @media only screen and (max-width: 768px) {
+
+    section .leftBox {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+  
+  section .leftBox .content {
+    padding: 20px;
+  }
+  
+  section .leftBox .content h1 {
+    font-size: 30px;
+  }
+  
+  section .leftBox .content p {
+    font-size: 14px;
+  }
+  
+  section .events {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  
+  section .events ul li .time {
+    padding: 10px;
+    width: 50%;
+    font-size: 14px;
+  }
+  
+  section .events ul li .time h2 {
+    font-size: 30px;
+    line-height: 20px;
+  }
+  
+  section .events ul li .time h2 span {
+    font-size: 16px;
+  }
+  
+  section .events ul li .details {
+    padding: 10px;
+    width: 50%;
+    font-size: 14px;
+  }
+  
+  section .events ul li .details h3 {
+    font-size: 16px;
+  }
+  
+  section .events ul li .details p {
+    font-size: 12px;
+  }
+  .footer{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+}
+    /* Styling the links of details class of events section */
+</style>
+<body>
+
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="image/ehuvik.png" alt="Logo of EHU Vikings">
+            </div>
+        
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+        
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+        
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Coaches</a></li>
+        
+                    <li class="services">
+                        <a href="#">Seasons</a>
+        
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="2324seas.html">2023-2024</a></li>
+                            <li><a href="2223seas.html">2022-2023</a></li>
+                        </ul>
+        
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a
+                            href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Join the Family</a>
+                    </li>
+        
+                    <li class="services">
+                        <a href="#">Gallery</a>
+                    
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="2324photos.php">2023-2024</a></li>
+                            <li><a href="2223photos.php">2022-2023</a></li>
+                    
+                        </ul>
+                    
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="https://www.facebook.com/EHUVikings/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehuvikings/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+
+    <main class="container3">
+        <section>
+            <div class="leftBox">
+                <div class="content">
+                    <h1>
+                        Events for the Vikings
+                    </h1>
+                    <p>
+                        The EHU Vikings events will be going on from September's Freshers week until May time. Events
+                        for the team are Socials, Charity events, Camps and Recruitment. The events going on will be lister
+                        below with month and date aswell as what will happen. The Vikings Family aims to organize as many events as 
+                        we can to support our team, community and well as having fun and bond together. We also like to organize events
+                        with other societies and teams as we all wear the same Edge Hill badge which unifies us as a whole.
+                    </p>
+                </div>
+            </div>
+            <div class="events">
+                <ul>
+                    <li>
+                        <div class="time">
+                            <h2>
+                                1st <br><span>November</span>
+                            </h2>
+                        </div>
+                        <div class="details">
+                            <h3>
+                                EHU Vikings Movember
+                            </h3>
+                            <p>
+                                Our beloved EHU Vikings will be part yet again of the Movember event and it will happen at 1pm in the Hub, our one and only Joe Sandle 
+                                will be shaving his hair for the event and plenty of our players will be shaving their beards to raise funds for a the Movembr charity. 
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="events">
+                <ul>
+                    <li>
+                        <div class="time">
+                            <h2>
+                                5th <br><span>November</span>
+                            </h2>
+                        </div>
+                        <div class="details">
+                            <h3>
+                                Lancaster Bombers VS Edge Hill Vikings
+                            </h3>
+                            <p>
+                                Your Vikings will be going away to Lancaster to play against the Bombers for their first DIV 2 Season game. 
+                        </div>
+                        <div style="clear: both;"></div>
+                    </li>
+            
+            
+                </ul>
+            </div>
+        </section>
+        
+            
+    </main>
+<footer class="footer">
+    <p>&copy; 2023 Edge Hill Vikings. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+</body>
+
+</html>

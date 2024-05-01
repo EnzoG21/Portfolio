@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Doggie Walks!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="top_banner">
+            <img src="/images/logo.svg" alt="Logo">
+            <strong>Ormskirk</strong>
+            Doggie Walks<br>
+            3-5 St Helens Road,<br>
+            Ormskirk<br>
+            L35 4PO
+            <strong>Southport</strong><br>
+            Doggie Walks<br>
+            150 Lord Street,<br>
+            Southport,<br>
+            PR9 0NP
+            <strong>Warrington</strong><br>
+            Doggie Walks<br>
+            47 Old Liverpool Road,<br>
+            Warrington,<br>
+            WA5 1AF
+            <img src="/images/dog-animal-pet-german-longhaired-pointer.jpg" alt="Banner Image">
+        </div>
+    </section>
+    <header>
+        <h1>Welcome to Doggie Walks!</h1>
+        <h3>"Helping our animal friends one paw at a time"</h3>
+        <p>We are committed to providing professional and personal care to your beloved four-legged friends.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li>
+                <a href="/AboutUs.html">About Us</a>
+                <ul>
+                    <li><a href="/Meet.html">Meet the Team</a></li>
+                </ul>
+            </li>
+            <li><a href="/services.html">Services and Costs</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery_text">
+        <p>Every week is a busy week! Checkout how much fun our guests have within our day care centers. All photos have
+            been taken with the consent of every owner.</p>
+    
+        <div class="gallery" id="imageGallery"></div>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const gallery = document.getElementById("imageGallery");
+
+            const imageFilenames = [
+                "dog-animal-pet-german-longhaired-pointer.jpg",
+                "dog-black-labrador-black-dog-162149.jpeg",
+                "dog-cavalier-king-charles-spaniel-funny-pet-162193.jpeg",
+                "dog-young-dog-puppy-59965.jpeg",
+                "pexels-photo-58997.jpeg",
+                "pexels-photo-264005.jpeg",
+                "pexels-photo-275717.jpeg",
+                "pexels-photo-283012.jpeg",
+                "pexels-photo-350428.jpeg",
+                "pexels-photo-422220.jpeg",
+                "pexels-photo-976924.jpeg",
+                "pexels-photo-1487665.jpeg",
+                "photo-1494947665470-20322015e3a8.jpg",
+                "photo-1531388185832-f111bb261e01.jpg",
+                "photo-1520103758300-2e22aee53ead.jpg",
+                "pexels-photo-165227.jpeg",
+            ];
+
+           
+            imageFilenames.forEach(filename => {
+                const img = document.createElement("img");
+                img.src = "images/" + filename;
+                gallery.appendChild(img);
+            });
+        });
+    </script>
+
+    <footer>
+        <p>Opening Times:<br>Monday – Friday (8am – 7pm)<br>Saturday (8am – 5pm)<br>Sunday (12pm - 5pm)</p>
+        <p>Contact Details:<br>Phone: 01695 883 112<br>Email: info@doggiewalks.co.uk</p>
+    </footer>
+</body>
+
+</html>

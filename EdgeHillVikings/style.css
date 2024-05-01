@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* LOGO */
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    transition: 0.3s ease;
+    color: green;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 60px;
+    z-index: 1;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: black;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 60px;
+    user-select: none;
+    
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: black;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        z-index: 999;
+    }
+
+    .menu a:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+        color: green;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 40%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown a:hover {
+        background-color: black;
+    }
+}
+
+.countdown{
+            background-color: #000000;
+            margin-bottom: 30px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+}
+
+#countdown {
+    color: white;
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+/*Main Index*/
+#container {
+    /* Use flexbox to align the cards horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    /* Add some space between the cards */
+    gap: 20px;
+}
+
+.card {
+    /* Add a fixed width to the cards */
+    width: 300px;
+
+    /* Change background color */
+    background-color: white;
+
+    /* Add border */
+    border: 1px solid #bacdd8;
+
+    /* Add space between the border and the content */
+    padding: 8px;
+
+    border-radius: 12px;
+
+    /* Use flexbox to align the card content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__details {
+    /* Add space around the details */
+    padding: 16px 8px 8px 8px;
+}
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
+}
+
+.name {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+p {
+    font-size: 14px;
+    color: #7f8c9b;
+    line-height: 150%;
+}
+
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: black;
+    background-color: #e0efff;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+button:focus,
+button:hover {
+    background-color: green;
+    color: #e0efff;
+}
+
+img {
+    width: 100%;
+    height: 214px;
+    object-fit: cover;
+}
+
+
+/*Season Results Blog*/
+
+#container2 {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+#container2 h1{
+    background-color: transparent;
+}
+#container2 h2 {
+    background-color: transparent;
+}
+
+#container2 h5{
+    background-color: transparent;
+}
+
+#container2 article{
+    border: 3px solid white;
+    background-image: linear-gradient(to bottom right, rgb(28, 45, 28), rgb(7, 109, 7));
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+#container2 article p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/*Gallery*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*About us*/
+#container3 {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+#container3 p{
+    color: white;
+}
+
+.history{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.player-name {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+
+.player-number,
+.player-role,
+.committee-role {
+    color: white;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+}
+.player-image {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: 150px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    /* Maintain aspect ratio and fill the container */
+    border-radius: 10%;
+    /* Optional: Rounded corners for a circular image */
+}
+
+ul {
+    list-style-type: none;
+    /* Remove the default bullet points */
+}
+
+/*Gallery*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* horizontal center */
+}
+
+/* (A2) SMALL SCREENS - 2 IMAGES PER ROW */
+@media screen and (max-width: 640px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* (B) THUMBNAILS */
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* fill | contain | cover | scale-down */
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+}
+
+/* (C) FULLSCREEN IMAGE */
+.gallery img.full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    /* fill | contain | cover | scale-down */
+    border: 0;
+    background: #fff;
+}
+
+
+
+/*Slide show*/

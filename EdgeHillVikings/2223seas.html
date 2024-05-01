@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHU Vikings</title>
+    <link rel="icon" href="/image/ehuvik.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<style>
+    .scoreboard {
+    margin: 20px auto;
+    width: 90%;
+    /* Adjusted width to fit mobile screens */
+    max-width: 500px;
+    /* Added max-width for larger screens */
+    background-color: #fff;
+    border: 5px solid green;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.scoreboard h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.scoreboard h4 {
+    text-align: center;
+    margin-top: 0;
+    color: black;
+    background-color: #fff;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: #fff;
+    color: black;
+}
+
+.team .team-name {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+}
+
+.team .team-name img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.team .team-name span {
+    font-weight: bold;
+    color: black;
+    background-color: #fff;
+}
+
+.team .team-score {
+    font-size: 24px;
+    color: black;
+    background-color: #fff;
+}
+
+/* Media Query for Mobile Screens */
+@media only screen and (max-width: 480px) {
+    .scoreboard {
+        width: 90%;
+        max-width: none;
+    }
+
+    .scoreboard h2 {
+        font-size: 20px;
+    }
+
+    .team .team-name img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .team .team-name span {
+        font-size: 14px;
+    }
+
+    .team .team-score {
+        font-size: 20px;
+    }
+}
+</style>
+
+<body>
+
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="image/ehuvik.png" alt="Logo of EHU Vikings">
+            </div>
+        
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+        
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+        
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Coaches</a></li>
+        
+                    <li class="services">
+                        <a href="#">Seasons</a>
+        
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="2324seas.html">2023-2024</a></li>
+                            <li><a href="2223seas.html">2022-2023</a></li>
+                        </ul>
+        
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a
+                            href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Join the Family</a>
+                    </li>
+        
+                <li class="services">
+                    <a href="#">Gallery</a>
+                
+                    <!-- DROPDOWN MENU -->
+                    <ul class="dropdown">
+                        <li><a href="2324photos.php">2023-2024</a></li>
+                        <li><a href="2223photos.php">2022-2023</a></li>
+                
+                    </ul>
+                
+                </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="https://www.facebook.com/EHUVikings/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/ehuvikings/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+
+    <main id="container2">
+        <article>
+            <h1>EHU Vikings 2022 Season</h1>
+            <h2>Team Record: 2 Win /4 Loss /1 Draw</h2>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>Liverpool VS Edge Hill</h2>
+                <h4>Date: 12/02/2023</h4>
+                <h4>Time: 2:00pm</h4>
+                <h4>WALKOVER BY EHU Vikings</h4>
+            
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/raptors.jpg" alt="Team A Logo">
+                        Liverpool Raptors
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+            
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team B Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+            
+            
+            </div>
+            <h2>Liverpool VS Edge Hill</h2>
+            <h5>Author: Unknown</h5>
+            <h5>Date: Unknown</h5>
+            <p>Unknown</p>
+        </article>
+        
+        <article>
+            <div class="scoreboard">
+                <h2>York St. John VS Edge Hill</h2>
+                <h4>Date: 05/02/2023</h4>
+                <h4>Time: 1:00pm</h4>
+                <h4>Win for EHU Vikings</h4>
+            
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/jags.jpg" alt="Team A Logo">
+                        YSJ Jaguars
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+            
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team B Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">54</span>
+                </div>
+            
+            
+            </div>
+            <h2>York St. John VS Edge Hill</h2>
+            <h5>Author: Husam Farraj</h5>
+            <h5>Date: February 14, 2023</h5>
+            <br><br>
+            <p>Offensive MVP - Samuel Hugh Henderson for executing great blocks all game, running crispy routes, making phenomenal
+            catches and stepping up as a leader for us on the day. Sammy was exceptional all game, really setting the tone for us on
+            offense from start to finish. It was a storybook ending for slant boy's last game with the Vikings, and he leaves the
+            team with big shoes to fill so I'm really looking forward to seeing who is going to step up and fill them next year.
+            <br><br>
+            Defensive MVP - Luca Guzzo had another marquee performance, playing sideline to sideline all game, making great tackles
+            and leading the defense in the backfield ensuring that everyone was in position. The Italian stallion was an extension
+            of the coaching staff on the day ensuring that the adjustments in place were executed to a tee, and like Sam he ends his
+            time with the Vikings in spectacular fashion and also leaves massive Prada shoes to fill.
+            <br><br>
+            Special Teams MVP - Ali Salman for showing us again how dangerous he is with the ball in his hands. "Flash" as he
+            introduced himself to me the first time we met, has truly lived to his moniker this season. The ultimate playmaker and a
+            true 'weapon', he was spinning around the field like a Beyblade fighting for every yard he could get and not giving up
+            until he got his TDs. Another spectacular performance from the man that puts special in special teams.
+            <br><br>
+            Team MVP - Matthew Walsh for once again doing everything he can to help the team compete and putting a dominant
+            performance on both sides of the ball. Matty has always put the Vikings first, playing hurt throughout the season and
+            with a banged up shoulder. He's been a true warrior for the squad, committed throughout and always gives it his all
+            whether he is running for 50 yard plus TDs or making sacks and tackles for loss in the backfield. For his first and last
+            season with the Vikings, he has definitely also left an everlasting legacy like all our seniors this year and will be
+            leaving massive shoes to fill.
+            </p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>Edge Hill VS Uclan</h2>
+                <h4>Date: 29/01/2023</h4>
+                <h4>Time: 1:00pm</h4>
+                <h4>Draw for EHU Vikings and UCLAN</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team A Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">6</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/rams.jpg" alt="Team B Logo">
+                        Uclan Rams
+                    </span>
+                    <span class="team-score">6</span>
+                </div>
+        
+        
+            </div>
+            <h2>Edge Hill VS Uclan</h2>
+            <h5>Author: Husam Farraj</h5>
+            <h5>Date: February 04, 2023</h5>
+            <br><br>
+            <p>
+            Offensive MVPs - The whole o line unit, Ethan Martin James Davies Max Sharpe Enzo Garny Robert Moss-Rathbone Cynan Anwyl
+            Liam Bradley for putting in an incredible shift on the day. They put the extra time off the field and their hard work
+            paid off massively for us on Sunday. Executing our new counter run scheme to perfection, creating running lanes up the
+            middle and giving the QBs plenty of time to pass. Shout-out to Ronan McFadden and Jack Barron on the incredible runs
+            they made and the receivers for their selfless blocking all game.
+            <br><br>
+            Defensive co-MVPs - Mike Koutsos for a phenomenal performance in his first game as a linebacker. Mikah displayed great
+            aggression from the first whistle to the last, and continuously made great plays between the tackles and from sideline
+            to sideline. Cynan Anwyl for showing us that not only is he a keyboard warrior (jk he's the best social media officer in
+            the entirety of britball) but that he is an absolute menace in the backfield. Big sacks, tackles for loss and always
+            making an attempt at stripping the ball out. Shout-out to the whole D for another lights out performance.
+            <br><br>
+            Special Teams MVP - Ali Salman the man that puts special in special teams. Ali stepped up massively for the team as a
+            punter when called upon, not flinching but making great kicks to ensure we stay in contention for the field position
+            battle. He also once again showed how deadly he is as a returner making massive gains everytime he touched the ball.
+            Shout-out to the whole D for two incredible stops, the first to block their PAT and the second to influence their FG
+            enough to ensure the game ended as a tie.
+            <br><br>
+            Team MVP - Robert Moss-Rathbone his height practically guarantees he would get head shotted in an actual battlefield
+            trench, nonetheless Rob showed us that he is the master of the trenches. Lead from the front all game, both on O and D,
+            even threatening to fight Coach Tom Garrity for taking him off for a couple of reps. Rob's performance is truly
+            astonishing given how this is only his first year playing the sport and that is a testament to his great attitude and
+            coachability. Shout-out to Matthew Walsh for making big tackles and sacks as a DE, Enzo Garny for stepping up as a
+            lineman and making big blocks when the team needed him, and the whole receiver core again for their selfless blocking
+            all game.
+</p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>Edge Hill VS Lancaster</h2>
+                <h4>Date: 04/12/2022</h4>
+                <h4>Time: 1:00pm</h4>
+                <h4>Loss for EHU Vikings</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team A Logo">
+                       Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/bombers.png" alt="Team B Logo">
+                        Lancaster Bombers
+                    </span>
+                    <span class="team-score">18</span>
+                </div>
+        
+        
+            </div>
+            <h2>Edge Hill VS Lancaster</h2>
+            <h5>Author: Unknown</h5>
+            <h5>Date: Unknown</h5>
+            <p>Unknown</p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>Bangor VS Edge Hill</h2>
+                <h4>Date: 27/11/2022</h4>
+                <h4>Time: 4:30pm</h4>
+                <h4>Win for EHU Vikings</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/Muddogs.jpg" alt="Team A Logo">
+                        Bangor Muddogs
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team B Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">40</span>
+                </div>
+        
+        
+            </div>
+            <h2>Bangor VS Edge Hill</h2>
+            <h5>Author: Hsuam Farraj</h5>
+            <h5>Date: November 28, 2022</h5>
+            <br><br>
+            <p>Offensive Co-MVPs: Samuel Hugh Henderson Thomas Cliffe big performance from these two resulting in big TDs. Sam and Tom
+            were dominant throughout offensively, continuously stretching the field and making big catches for first downs and
+            points.
+            <br><br>
+            Defensive Co-MVPs: Oliver Michalak Spencer Dwyer Moss-Rathbone sacks, tackles for loss, fumbles and a crucial
+            interception. What an incredible performance by Spence and Olly, showing the same stoutness and play making ability
+            they've exhibited game after game.
+            <br><br>
+            Special Teams MVP: Ronan McFadden again for the great work he does in the kicking game, ensuring we came out victorious
+            in the field position battle.
+            <br><br>
+            Team MVP: Matthew Walsh setting the tone for us on offense in the first half, for him to then do the same thing on
+            defense in the second half. Matt led an exemplary effort for us offensively which showed us reach the potential we all
+            know our team is capable of, and then went on the defense to make big tackles including a sack.
+            </p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>Edge Hill VS York</h2>
+                <h4>Date: 12/11/2022</h4>
+                <h4>Time: 2:00pm</h4>
+                <h4>Loss for EHU Vikings</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team A Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">0</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/centurion.jpg" alt="Team B Logo">
+                        York Centurions
+                    </span>
+                    <span class="team-score">14</span>
+                </div>
+        
+        
+            </div>
+            <h2>Edge Hill VS York</h2>
+            <h5>Author: Husam Farraj</h5>
+            <h5>Date: November 28, 2022</h5>
+            <br><br>
+            <p>MVPS:
+            <br><br>
+            Offensive MVP: Max Sharpe for putting on a dominant performance on the interior of the O-line after coming back from a
+            surgery
+            <br><br>
+            Defensive MVP: Cameron Heaton making key tackles throughout the game that resulted in crucial drive ending stops.
+            <br><br>
+            Special Teams MVP: Ronan McFadden for his great punting throughout the game and in many pressure situations.
+            <br><br>
+            Team Co-MVPs: Cynan Anwyl Oliver Michalak Charlie Schorah for playing both ways throughout the game and making some big
+            tackles for loss on the D</p>
+        </article>
+        <article>
+            <div class="scoreboard">
+                <h2>Bradford VS Edge Hill</h2>
+                <h4>Date: 30/10/2022</h4>
+                <h4>Time: 3:00pm</h4>
+                <h4>Loss for EHU Vikings</h4>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/bears.jpg" alt="Team A Logo">
+                        Bradford Bears
+                    </span>
+                    <span class="team-score">22</span>
+                </div>
+        
+                <div class="team">
+                    <span class="team-name">
+                        <img src="/image/ehuvik.png" alt="Team B Logo">
+                        Edge Hill Vikings
+                    </span>
+                    <span class="team-score">12</span>
+                </div>
+        
+        
+            </div>
+            <h2>Bradford VS Edge Hill</h2>
+            <h5>Author: Husam Farraj</h5>
+            <h5>Date: Octerber 31, 2022</h5>
+            <br><br>
+            <p>MVPs for yesterday:
+            <br><br>
+            - Offense: Ali Salman for moving the chains for us all game and punching our first TD of the season in
+            <br><br>
+            - Defense: Spencer Dwyer Moss-Rathbone for reading the offense brilliantly, running sideline to sideline all game making
+            key tackles including a number for loss
+            <br><br>
+            - Special Teams: Ali Salman for his excellent returns giving us great field position all game
+            <br><br>
+            We have also added a fourth post game award for this year - Team MVP. The criteria for this award is who will show us
+            relentless effort throughout the game, and display the qualities we value both on the sideline and on the field.
+            <br><br>
+            - Team Co-MVPs: Charlie Schorah Oliver Michalak for playing both ways all game and still giving 100% effort on every
+            snap making plays on both sides of the ball.
+            <br><br>
+            Honourable mentions: the interior O-line for not allowing any pressures through the middle. Sam Mgclincy for stepping up
+            for us on Defense making big tackles. Dan Couton New for putting on a blocking clinic all game, with his key block
+            spurring Ali on for the big gain that led to our first TD
+           
+</p>
+        </article>
+    </main>
+<footer>
+    <p>&copy; 2023 Edge Hill Vikings. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+</body>
+
+</html>
