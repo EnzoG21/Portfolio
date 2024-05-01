@@ -227,3 +227,37 @@ input[type="submit"]:hover {
     margin-top: 5px;
     padding-left: 20px;
 }
+
+.education {
+    list-style: none;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.education li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.education li .date {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.education li .degree {
+    font-weight: bold;
+}
+
+.education li .institution {
+    color: #777;
+}
+.results{
+    margin-top: 5px;
+    padding-left: 20px;
+}
