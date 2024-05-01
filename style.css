@@ -198,3 +198,32 @@ input[type="submit"]:hover {
 .badge:hover {
     transform: scale(1.1);
 }
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+}
+
+.date {
+    font-weight: bold;
+}
+.job-title {
+    display: block;
+}
+.company {
+    display: block;
+    font-style: italic;
+}
+
+.timeline li p {
+    margin: 5px 0 0;
+}
+
+.duties {
+    margin-top: 5px;
+    padding-left: 20px;
+}
