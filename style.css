@@ -11,6 +11,7 @@ header {
     padding: 20px;
 }
 
+/*Navigation*/
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -40,7 +41,7 @@ footer {
     padding: 20px;
 }
 
-
+/*Contact form*/
 .form-container {
     width: 50%;
     margin: 0 auto;
@@ -106,7 +107,7 @@ input[type="submit"]:hover {
     height: auto;
 }
 
-
+/*IndexPage banner*/
 .banner {
     position: relative;
     display: flex;
@@ -130,19 +131,21 @@ input[type="submit"]:hover {
     border-radius: 10px;
     margin-bottom: 70px;
 }
-.banner p{
+
+.banner p {
     position: absolute;
-        margin-top:140px;
-        color: white;
-        font-size: 1.5rem;
-        text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        background-color: black;
-        padding: 10px 20px;
-        border-radius: 10px;
+    margin-top: 140px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
+/*About me page*/
 .aboutme {
     display: grid;
     grid-template-columns: 1fr;
@@ -209,9 +212,11 @@ input[type="submit"]:hover {
 .date {
     font-weight: bold;
 }
+
 .job-title {
     display: block;
 }
+
 .company {
     display: block;
     font-style: italic;
@@ -256,14 +261,19 @@ input[type="submit"]:hover {
     color: darkgray;
     padding-left: 5px;
 }
-.results{
+
+.results {
     padding-left: 20px;
-    
+
 }
-.card_container{
+
+/*Projects page*/
+
+.card_container {
     justify-content: center;
     display: flex;
 }
+
 .card {
     width: 400px;
     padding: 20px;
@@ -299,4 +309,83 @@ input[type="submit"]:hover {
 
 .card a:hover {
     text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .aboutme img {
+        max-width: 100%;
+
+    }
+
+    .skills {
+        justify-content: flex-start;
+    }
+
+    .timeline li {
+        text-align: center;
+    }
+
+    .education li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education li img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .results {
+        padding-left: 0;
+    }
+
+    .card_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .banner h1 {
+        font-size: 18px;
+    }
+
+    .banner p {
+        font-size: 14px;
+        margin-top: 120px;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+
+    .badge {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
 }
