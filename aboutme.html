@@ -1,34 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Document type declaration -->
 <html lang="en">
+<!-- Language of the document -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- Head of the document -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta tag -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>About Me</title>
+    <!-- Link to external stylesheet for icons-->
+    <title>About Me</title> <!-- Title of the document -->
 </head>
 
 <body>
     <header>
-        <h1 id="typer" alt="My Web Development Portfolio"></h1>
+        <h1 id="typer" alt="My Web Development Portfolio"></h1> <!-- Heading with id and alt attribute -->
 
         <script>
-            var i = 0;
-            var txt = 'My Web Development Portfolio ';
-            var speed = 200;
+            //Script for typing animation
+            var i = 0; //Variable to keep track of the current character
+            var txt = 'My Web Development Portfolio '; //Text for typing animation
+            var speed = 200; //Speed of typing animation
 
-            function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("typer").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
+            function typeWriter() { //Function for typing animation
+                if (i < txt.length) { //Check if all characters have been typed
+                    document.getElementById("typer").innerHTML += txt.charAt(i); //Add current character to the heading
+                    i++; //Increment character counter
+                    setTimeout(typeWriter, speed); //Call the function again after a delay
                 }
             }
-            window.onload = function () {
-                typeWriter();
+            window.onload = function () { //Function to call when the window is loaded
+                typeWriter(); //Call the typing animation function 
             };
         </script>
+        <!-- Navigation section -->
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -40,16 +45,22 @@
     </header>
 
     <main class="aboutme">
-        
+
         <section class="content">
             <img src="/images/enzo2.jpg" alt="Profile Image">
             <h2>About Me</h2>
-            <p>Organized and dependable candidate who is successful at managing multiple priorities with a positive attitude.
-            Willingness to take on added responsibilities to meet team goals. Detail-oriented team player with strong
-            organizational skills. Ability to handle multiple projects simultaneously with a high degree of accuracy.
-            Currently an International Student from Italy studying Web Design and Development at Edge Hill going into
-            3rd Year</p>
+            <!--About me text-->
+            <p>Organized and dependable candidate who is successful at managing multiple priorities with a positive
+                attitude.
+                Willingness to take on added responsibilities to meet team goals. Detail-oriented team player with
+                strong
+                organizational skills. Ability to handle multiple projects simultaneously with a high degree of
+                accuracy.
+                Currently an International Student from Italy studying Web Design and Development at Edge Hill going
+                into
+                3rd Year</p>
         </section>
+        <!--Work Experience-->
         <section class="content">
             <h2>Experience</h2>
             <ul class="timeline">
@@ -69,62 +80,72 @@
                     <li>Engaged customers to enhance in-store experience and provide outstanding customer service.</li>
                     <li>Colleague of the Quarter October-December 2023 for TeamWork and always being available</li>
                 </ul>
-        
+
                 <li>
                     <span class="date">05/2023 - 05/2024</span>
                     <span class="job-title">Vice President</span>
                     <span class="company">EHU Vikings, Ormskirk</span>
                 </li>
                 <ul class="duties">
-                    <li>Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity</li>
+                    <li>Quickly learned new skills and applied them to daily tasks, improving efficiency and
+                        productivity</li>
                     <li>Carried out day-day-day duties accurately and efficiently</li>
                     <li>Demonstrated respect, friendliness and willingness to help wherever needed</li>
-                    <li>Actively listened to players and other committee members, handled concerns quickly and escalated major
+                    <li>Actively listened to players and other committee members, handled concerns quickly and escalated
+                        major
                         issues to
                         supervisor</li>
                     <li>Used coordination and planning skills to achieve results according to schedule</li>
-                    <li>Participated in continuous improvement by generating suggestions, engaging in problem-solving activities
+                    <li>Participated in continuous improvement by generating suggestions, engaging in problem-solving
+                        activities
                         to support
                         teamwork</li>
                 </ul>
-        
+
                 <li>
                     <span class="date">05/2022 - 09/2022</span>
                     <span class="job-title">Welcome and Service Coordinator</span>
                     <span class="company">Club Med Kamarina, Scoglitti, Italy</span>
                 </li>
                 <ul class="duties">
-                    <li>As a polyvalent receptionist working both in Front Desk and Back Office as well as part-taking in
+                    <li>As a polyvalent receptionist working both in Front Desk and Back Office as well as part-taking
+                        in
                         everyday
                         activities</li>
-                    <li>Quickly learned new skills and applied them to daily tasks, improving efficiency and productivity</li>
+                    <li>Quickly learned new skills and applied them to daily tasks, improving efficiency and
+                        productivity</li>
                     <li>Carried out day-day-day duties accurately and efficiently</li>
                     <li>Demonstrated respect, friendliness and willingness to help wherever needed</li>
                     <li>Worked flexible hours; night, weekend, and holiday shifts</li>
-                    <li>Performed duties in accordance with applicable standards, policies and regulatory guidelines to promote
+                    <li>Performed duties in accordance with applicable standards, policies and regulatory guidelines to
+                        promote
                         safe working
                         environment</li>
                     <li>Maintained energy and enthusiasm in fast-paced environment</li>
-                    <li>Offered friendly and efficient service to customers, handled challenging situations with ease</li>
+                    <li>Offered friendly and efficient service to customers, handled challenging situations with ease
+                    </li>
                     <li>Maintained excellent attendance record, consistently arriving to work on time</li>
                     <li>Served customers and followed outlined steps of service</li>
                     <li>Exceeded goals through effective task prioritization and great work ethic</li>
                     <li>Used coordination and planning skills to achieve results according to schedule</li>
                 </ul>
-        
-        
+
+
                 <li>
                     <span class="date">05/2022 - 05/2023</span>
                     <span class="job-title">Kit Manager</span>
                     <span class="company">EHU Vikings, Ormskirk</span>
                 </li>
                 <ul class="duties">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatibus doloribus incidunt laboriosam
-                        labore quidem nihil veniam deleniti corporis adipisci minus, eaque rem earum laudantium velit, ducimus
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatibus doloribus incidunt
+                        laboriosam
+                        labore quidem nihil veniam deleniti corporis adipisci minus, eaque rem earum laudantium velit,
+                        ducimus
                         asperiores libero possimus!</li>
                 </ul>
             </ul>
         </section>
+        <!--Skills section-->
         <section class="content">
             <h2>Skills</h2>
             <div class="skills">
@@ -138,8 +159,8 @@
                 <span class="badge"><i class="fab fa-github"></i> GitHub</span>
             </div>
         </section>
-        
 
+        <!--Education section-->
         <section class="content">
             <h2>Education</h2>
             <ul class="education">
@@ -181,13 +202,14 @@
                     </ul>
                 </li>
             </ul>
-        
+
         </section>
     </main>
     <footer>
-        <p>Italian Phone: +39 320 347 0798</p>
-        <p>UK Phone: +44 7856 704 396</p>
-        <p>Email: enzogafe@gmail.com</p>
+        <!-- Footer of the page -->
+        <p>Italian Phone: +39 320 347 0798</p> <!-- Paragraph for Italian phone number -->
+        <p>UK Phone: +44 7856 704 396</p> <!-- Paragraph for UK phone number -->
+        <p>Email: enzogafe@gmail.com</p> <!-- Paragraph for email address -->
     </footer>
 </body>
 

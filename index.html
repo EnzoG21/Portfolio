@@ -1,34 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Document type declaration -->
 <html lang="en">
+<!-- Language of the document -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Enzo Garny</title>
+    <!-- Head of the document -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design meta tag -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+    <title>Enzo Garny</title> <!-- Title of the document -->
 </head>
 
 <body>
 
     <header>
-        <h1 id="typer" alt="My Web Development Portfolio"></h1>
-        
-        <script>
-            var i = 0;
-            var txt = 'My Web Development Portfolio ';
-            var speed = 200;
+        <h1 id="typer" alt="My Web Development Portfolio"></h1> <!-- Heading with id and alt attribute -->
 
-            function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("typer").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
+        <script>
+            //Script for typing animation
+            var i = 0; //Variable to keep track of the current character
+            var txt = 'My Web Development Portfolio '; //Text for typing animation
+            var speed = 200; //Speed of typing animation
+
+            function typeWriter() { //Function for typing animation
+                if (i < txt.length) { //Check if all characters have been typed
+                    document.getElementById("typer").innerHTML += txt.charAt(i); //Add current character to the heading
+                    i++; //Increment character counter
+                    setTimeout(typeWriter, speed); //Call the function again after a delay
                 }
             }
-            window.onload = function () {
-                typeWriter();
+            window.onload = function () { //Function to call when the window is loaded
+                typeWriter(); //Call the typing animation function 
             };
         </script>
+        <!-- Navigation section -->
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -38,17 +42,18 @@
             </ul>
         </nav>
     </header>
-    
+
     <section class="banner">
         <h1>Hi! My name is Enzo Garny</h1>
         <p>And I am a Front End Web Developer</p>
     </section>
-    
+
 
     <footer>
-        <p>Italian Phone: +39 320 347 0798</p>
-        <p>UK Phone: +44 7856 704 396</p>
-        <p>Email: enzogafe@gmail.com</p>
+        <!-- Footer of the page -->
+        <p>Italian Phone: +39 320 347 0798</p> <!-- Paragraph for Italian phone number -->
+        <p>UK Phone: +44 7856 704 396</p> <!-- Paragraph for UK phone number -->
+        <p>Email: enzogafe@gmail.com</p> <!-- Paragraph for email address -->
     </footer>
 
 </body>

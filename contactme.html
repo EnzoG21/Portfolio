@@ -9,46 +9,51 @@
 </head>
 
 <body>
-<header>
-    <h1 id="typer" alt="My Web Development Portfolio"></h1>
 
-    <script>
-        var i = 0;
-        var txt = 'My Web Development Portfolio ';
-        var speed = 200;
+    <header>
+        <h1 id="typer" alt="My Web Development Portfolio"></h1> <!-- Heading with id and alt attribute -->
 
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("typer").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
+        <script> //Script for typing animation
+            var i = 0; //Variable to keep track of the current character
+            var txt = 'My Web Development Portfolio '; //Text for typing animation
+            var speed = 200; //Speed of typing animation
+
+            function typeWriter() { //Function for typing animation
+                if (i < txt.length) { //Check if all characters have been typed
+                    document.getElementById("typer").innerHTML += txt.charAt(i); //Add current character to the heading
+                    i++; //Increment character counter
+                    setTimeout(typeWriter, speed); //Call the function again after a delay
+                }
             }
-        }
-        window.onload = function () {
-            typeWriter();
-        };
-    </script>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/aboutme.html">About</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/contact.html">Contact me</a></li>
-        </ul>
-    </nav>
-</header>
+            window.onload = function () { //Function to call when the window is loaded
+                typeWriter(); //Call the typing animation function 
+            };
+        </script>
+        <!-- Navigation section -->
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutme.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contactme.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="contact_section">
+        <!-- Contact information container -->
         <div class="information">
             <h2>Contact Information</h2>
             <p>I currently live in Liverpool L1 area having completed my studies in Ormskirk</p>
             <p>Contact Details:<br>
-            <br>Italian Phone: +39 320 347 0798
-            <br>UK Phone: +44 7856 704 396
-            <br>Email: enzogafe@gmail.com</p>
+                <br>Italian Phone: +39 320 347 0798
+                <br>UK Phone: +44 7856 704 396
+                <br>Email: enzogafe@gmail.com
+            </p>
         </div>
+        <!-- Aside container for the contact form -->
         <aside class="contact_form">
             <h2>Contact Form</h2>
-    
+
             <form action="#" method="post">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name"><br>
@@ -61,10 +66,10 @@
         </aside>
     </section>
 
-    <footer>
-        <p>Italian Phone: +39 320 347 0798</p>
-        <p>UK Phone: +44 7856 704 396</p>
-        <p>Email: enzogafe@gmail.com</p>
+    <footer> <!-- Footer of the page -->
+        <p>Italian Phone: +39 320 347 0798</p> <!-- Paragraph for Italian phone number -->
+        <p>UK Phone: +44 7856 704 396</p> <!-- Paragraph for UK phone number -->
+        <p>Email: enzogafe@gmail.com</p> <!-- Paragraph for email address -->
     </footer>
 </body>
 
